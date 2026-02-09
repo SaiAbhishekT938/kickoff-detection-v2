@@ -37,14 +37,14 @@ sys.stdout = tee
 # ========== CONFIG ==========
 OPENAI_API_KEY = "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"
 # Set GAME_TYPE to "basketball" for basketball games or "football" for football games
-GAME_TYPE = "basketball"  # Options: "basketball" or "football"
+GAME_TYPE = "football"  # Options: "basketball" or "football"
 # Set DETECTION_MODE to "kickoff_tipoff" for game start detection or "halftime_resumption" for halftime resumption detection
 DETECTION_MODE = "halftime_resumption"  # Options: "kickoff_tipoff" or "halftime_resumption"
 # Set AUDIO_SOURCE_TYPE to "s3_url" for testing with S3 bucket audio clips, or "stream_url" for live streams
 AUDIO_SOURCE_TYPE = "s3_url"  # Options: "s3_url" or "stream_url"
 # For S3 URL: Use a publicly accessible S3 URL (e.g., "https://bucket-name.s3.region.amazonaws.com/path/to/audio.mp3")
 # For Stream URL: Use a live stream URL (e.g., "https://img.leanstream.co/IM5001-MP3")
-AUDIO_URL = "https://file-hosting-bucket-1.s3.us-east-1.amazonaws.com/BASKETBALL_duke-kansas_20%20min_HALFTIME.mp3?response-content-disposition=inline&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEID%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIHUBlngYzQv9CsNTW4JFRGz0jGqkHIZH%2F6buM%2FHHucN4AiB6wgBjDmPIrcSHM4WDuifJxWWWY2PG24pku0vVJyR1nyrMAwhJEAAaDDk4OTA2MTg2NDI3NyIMjWU8XRtZ9LllmoknKqkDOovOJn3UQZA3ACpcxY7Ur8UC2%2BwPSCkfaDDYhMGTLjAL5JBCbEImmB7zm6GK36mXN3dPyiYTgtOnAbwwzTfaJcy0o6JwI97UE67r30kk8F%2BNhnWP2k%2FfV5BhvLEJd4CDtcRJOzwoWvMjWD7RcOwoGDhR%2FWKZbxAtfN6t8tRGT%2FovjOEgemhn3aZbnXbS6x9ILf8hzPo0Vy9nqDlH0QOi8IhRX1gOJqWhgc15rA0KIHz3gutKbSyj6mV4DqsHij2quKb%2FHkBh%2F5Q%2Bn71pg8QqxJrosPLYd2MW0GSw4o8DnIcNq%2F3xfVk4MA56EaYCTezlpVPg4ahBwH%2B%2FuTVpMf2wXhtn44uCL49p%2FzBB%2BxXf%2FEdCkQslrB25r3tOXn0H8M3GphGnyWfQA6HpkRsRJNS0beJ4ftk8yhneinxTtEwRIUHwUSSFoBCbc3AAez91yvHbQ7e2VM4HPRWbZiI1fjcYKJgo3%2BmsWCUdQzWFubkvLJMc%2F1D4jRaMAFgF%2FYkMMlylxxf5IeZpT5vC7wmqEEEb1GK%2BU3KMRY21LrMtXFJv9kxY0xhSTxdm95YwyMqXzAY63wIS4tD3SEpXb%2BK2%2FSU%2Bpf%2FdtgKqRl7UYSSjfsxD7jNAiTUxHrFA7Bl%2Fl7RuP5kejDVyTJ9MTXyAN6h7Scc4t86ktTeg6XzrPOD5vqTJh7NITVSrYSRhXLkZ4holHi8j96EkrSzNZIvgwQ3d1jrWj22jSViCOFCA4xcCRGkWKdQhlNs6PEv5oW0rpgpwqat%2FMC7p2WhvvGpQLMHTLVEXrtyID0MAoGX%2B8zVQakRQp5r0XkLJRJk9pF17UBxYLof%2FWwuQhUcvJhDD%2FUpLrzY5ccBPTjMQu8Dgy9W6H9lBT4bKP8gWkX5LgbujbphPEW%2F8veme2fr8ETnxsr5UfIAVcs%2B%2FqE6q6574zKtXbs%2BbvE4%2B5Qk6ThWnQHYyBgeXhkLXyui2odVplCiXq9KylM1%2BWy8SihlyepWbA1hp2dMph9NwTXmpvRHqtMBb%2FqsXmtB0DWHLfBKmWn1kfecsYoePUBw%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA6MSFOLNKVYWJWQO6%2F20260206%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260206T155706Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=9b1ce7d92be07a784af8b977a499eb79a5de1ec54210cfbfce984788ee713ed8"  # Replace with your S3 URL
+AUDIO_URL = "https://file-hosting-bucket-1.s3.us-east-1.amazonaws.com/FOOTBALL_duke-NCState_20min_HALFTIME.mp3?response-content-disposition=inline&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEMn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQCi9HDSTlOFWaKdK%2BSi5SNAUENyd48lAiJpgzwd%2F0miRgIgP0Op%2F%2B7GfZ2tw5SDThwxgMfBFMTc5imiZzlNU6G19ekq1QMIkv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw5ODkwNjE4NjQyNzciDGqqdYsg23P6Q9NdsyqpA%2FPbcrbN3lzqpV3qg6r30StTlcCl2aBTSp22fknB%2FOsY2j%2B66JVTnpEQt6DrygC3D4uBWb59jwZMeFTN1QKJODVs2Dt4LNtOzkEM7h4YUthvfi11QOzkeOffADkmj7jrqwxGa8dPBmgvgKmt1mk2%2FheJvcRsHm8QXn6pxH10yvNSzXg9sECITlhnypqubrGoMkdTF9qsYp%2FNkJaW%2BhH8oztZLUfpmvjONvLgz6vOGOpHF9ANAfsQoRiBE11bwdQk4MHEABNU64kldp2iIke%2FhqF29CRnA8HkUtZa261tUvtt7QfJmQ0OrnbjWWc2N5YLPWlqOEsWaEQRFFpR5nLceaADhXuKerFNLaCWa0ib7v5NdWJ34mb5%2FelYP6MhjylOcHj6iAsCTffxw%2BjkQPS%2F8xel71Qj%2FJBttd8VnQTe8aNIugUsg9QNaFZk03OMAtzv1J94IIgEVGJuUpC%2BxajvVpN9rzs4tyiyMvhcmQlniCfGn4a%2BMyS%2F1BdqYREJ225Q1ss3swsCn29m%2FpU6gh11LuEc8S8LbizCqq%2Br5bO98hQ65ukSCMFO%2BqTqMObOp8wGOt4CAQaDbsZDt0G2wR%2BlZFrwS2B50wlSKdzz4GUkoF73Tx2XteKBDCd8BXT8tVwhdkXOBrvTfZBSZGq9Fmd5G%2FyakjdQ2o5NZQBN6CNRCFMTC0J4JbiAPSr%2B%2BTGa1y5bMNfEce3XYmn9KwTMP6zR2h46LRQsakcJfp3CNDiStbh%2FxAatQqbx%2BYX387Zi%2B58kVIjBzpBnRSYReXLAE74IfY222yi55xTlTC7jp9qfIQT6JcEoWFjYfXcOQKDmCAflrbvNXxvh1r0IYnx026QMK3EP9i1yz6PA1Ibu1av1nKyG5DGDE%2FqgJD2cij7iegRl%2FHGP9TCLD%2F%2FzJ0Z1kOp11JeZiyfWNXN3s64LPIlc%2BYu3rp79p3x%2BcGCertqnM%2FFOwNiWVfYnaw24mWggdSCKOlBfaGZeBiC%2BUQB6Lep1FBWyVkoYSJnQIRqRyNnk8gAW3guVWPxFMlM%2FxMYDyKoz8Wo%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA6MSFOLNKU2BD574S%2F20260209%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260209T162912Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=5210c75275130c3d767a9a78f1435e2a46311cf200a487e573cbd20315a99d01"  # Replace with your S3 URL
 STREAM_URL = "https://img.leanstream.co/IM5001-MP3"  # Keep for future stream use
 USE_LLM = "yes"
 
@@ -323,7 +323,25 @@ def confirm_gameplay(confirmation_text, initial_detection_text):
                     "role": "system",
                     "content": f"""You are an expert {analyst_type}. Your job is to determine if the audio following a potential {event_name} detection contains ACTUAL GAMEPLAY or if it's still PRE-GAME/HALFTIME TALK.
 
-GAMEPLAY INDICATORS (answer YES):
+{"="*60}
+CRITICAL FOR HALFTIME RESUMPTION - STRICT VERIFICATION:
+{"="*60}
+
+FIRST: Reject if following audio is HALFTIME ANALYSIS/COMMENTARY:
+- "halftime", "at halftime", "halftime score", "halftime analysis", "halftime coverage"
+- Statistics, scores, or analysis without gameplay action
+- "coming up", "after the break", "moments away"
+- Just announcements without actual player actions
+→ If any of these, answer NO immediately
+
+SECOND: Accept ONLY if following audio has CLEAR GAMEPLAY:
+- Player names + action verbs (shoots, passes, runs, throws, tackles, etc.)
+- Actual play-by-play commentary of live action
+- Score updates during gameplay
+- Fouls, penalties, or game events happening NOW
+- NOT just "underway" or "away we go" - must have actual gameplay
+
+GAMEPLAY INDICATORS (answer YES - must have actual player actions):
 {gameplay_indicators}
 
 PRE-GAME/HALFTIME INDICATORS (answer NO):
@@ -336,8 +354,9 @@ PRE-GAME/HALFTIME INDICATORS (answer NO):
 - Sponsor mentions
 - Stadium/crowd descriptions without action
 - Coach/season background info
-- Halftime analysis or commentary
+- Halftime analysis or commentary (STRICT REJECTION)
 - Just crowd noise or music
+- Just "underway" or "away we go" without gameplay action
 
 EXAMPLES:
 {examples}
@@ -353,9 +372,25 @@ Following audio (next 8 seconds):
 
 QUESTION: Does the following audio contain ACTUAL GAMEPLAY (player actions, shots, passes, fouls, etc.) AND does it show POST-{event_name.upper()} context (game has started/resumed, action is happening)?
 
-CRITICAL: Verify BOTH:
-1. Does it contain gameplay indicators? (player actions, scores, fouls, etc.)
-2. Does it show POST-event context? (game underway, action happening, not pre-game/halftime talk)
+{"="*60}
+CRITICAL FOR HALFTIME RESUMPTION - STRICT VERIFICATION:
+{"="*60}
+
+FIRST: Reject if following audio is HALFTIME ANALYSIS/COMMENTARY:
+- "halftime", "at halftime", "halftime score", "halftime analysis"
+- Statistics, scores, or analysis without gameplay action
+- "coming up", "after the break"
+→ If any of these, answer NO immediately
+
+SECOND: Accept ONLY if following audio has BOTH:
+1. CLEAR gameplay indicators: Player names + action verbs (shoots, passes, runs, throws, tackles, etc.)
+2. POST-event context: Game underway, action happening, NOT pre-game/halftime talk
+3. NOT just announcements: Must have actual player actions, not just "underway" or "away we go"
+
+CRITICAL: Verify BOTH conditions are met:
+1. Does it contain gameplay indicators? (player actions, scores, fouls, etc.) → Must be YES
+2. Does it show POST-event context? (game underway, action happening, not pre-game/halftime talk) → Must be YES
+3. Is it halftime analysis/commentary? → If YES, answer NO
 
 Answer ONLY: YES or NO"""
                 }
@@ -403,44 +438,56 @@ def llm_confirm(text, context_sentences, timestamp_ms, sentence_index):
                 analyst_type = "basketball analyst"
                 event_name = "halftime resumption (second half/second period tip-off)"
                 event_term = "halftime resumption"
-                accept_examples = """✅ "Second half underway, Johnson controls the tip" → YES (past tense, completed action)
-✅ "Back to action, Smith gets the second half tip" → YES (past tense, completed action)
-✅ "Second period begins, away we go" → YES (present tense, happening now)
-✅ "And we're back, second half underway" → YES (present tense, started)"""
-                accept_patterns = """- "second half/second period" + "underway", "begins", "starts"
-- "back to action", "resuming play", "second half begins"
-- "controls the tip", "wins the tap", "gets the tip" (in context of second half)
-- "away we go" (when second half is starting, not halftime break)
-- Player names + action verbs in second half context (e.g., "Smith controls it, second half")
-- Ball possession established after second half tip"""
+                accept_examples = """✅ "Second half underway, Johnson controls the tip" → YES (clear resumption + action)
+✅ "Back to action, Smith gets the second half tip" → YES (clear resumption + action)
+✅ "Second period begins, Johnson controls the tip" → YES (clear resumption + action)
+✅ "We're back, Smith wins the second half tip" → YES (clear resumption + action)"""
+                accept_patterns = """STRICT REQUIREMENTS - ALL must be true:
+1. MUST mention "second half/second period" OR "back to action/resuming play" 
+2. MUST describe actual tip-off action: "controls/wins/gets the tip" OR "tip-off" + "underway/begins"
+3. MUST be past/present tense (action completed or happening NOW)
+4. MUST NOT be just "away we go" or "underway" alone - must have tip-off action"""
                 reject_examples = """❌ "Second half is moments away" → NO (future tense)
 ❌ "About to resume after halftime" → NO (future tense)
 ❌ "Will start the second half shortly" → NO (future tense)
 ❌ "Halftime analysis continues" → NO (still in break)
-❌ "Coming up after the break" → NO (still in break)"""
-                completed_actions = "controlled, won, got, resumed, began"
-                ongoing_actions = "controls, gets, underway, begins, starts, resuming"
+❌ "Coming up after the break" → NO (still in break)
+❌ "Away we go" → NO (no tip-off action described)
+❌ "Second half underway" → NO (no tip-off action, just announcement)
+❌ "Here we go" → NO (no tip-off action)
+❌ "Back to action" → NO (no tip-off action described)
+❌ "Halftime score is 45-40" → NO (halftime analysis)
+❌ "At halftime, Duke leads" → NO (halftime analysis)
+❌ "Welcome to halftime" → NO (halftime break)"""
+                completed_actions = "controlled, won, got"
+                ongoing_actions = "controls, wins, gets"
             else:  # football
                 analyst_type = "football analyst"
                 event_name = "halftime resumption (second half/third quarter kickoff)"
                 event_term = "halftime resumption"
-                accept_examples = """✅ "Second half underway, Johnson receives the kickoff" → YES (past tense, completed action)
-✅ "Back to action, Smith returns the second half kick" → YES (past tense, completed action)
-✅ "Third quarter begins, away we go" → YES (present tense, happening now)
-✅ "And we're back, second half underway" → YES (present tense, started)"""
-                accept_patterns = """- "second half/third quarter" + "underway", "begins", "starts"
-- "back to action", "resuming play", "second half begins"
-- "receives the kickoff", "returns the kick", "fields the kickoff" (in context of second half)
-- "away we go" (when second half is starting, not halftime break)
-- Player names + action verbs in second half context (e.g., "Smith returns it, second half")
-- Ball possession established after second half kickoff"""
+                accept_examples = """✅ "Second half underway, Johnson receives the kickoff" → YES (clear resumption + action)
+✅ "Back to action, Smith returns the second half kick" → YES (clear resumption + action)
+✅ "Third quarter begins, Johnson receives the kickoff" → YES (clear resumption + action)
+✅ "We're back, Smith fields the kickoff" → YES (clear resumption + action)"""
+                accept_patterns = """STRICT REQUIREMENTS - ALL must be true:
+1. MUST mention "second half/third quarter" OR "back to action/resuming play"
+2. MUST describe actual kickoff action: "receives/returns/fields the kickoff" OR "kickoff" + "underway/begins"
+3. MUST be past/present tense (action completed or happening NOW)
+4. MUST NOT be just "away we go" or "underway" alone - must have kickoff action"""
                 reject_examples = """❌ "Second half is moments away" → NO (future tense)
 ❌ "About to resume after halftime" → NO (future tense)
 ❌ "Will start the second half shortly" → NO (future tense)
 ❌ "Halftime analysis continues" → NO (still in break)
-❌ "Coming up after the break" → NO (still in break)"""
-                completed_actions = "received, returned, fielded, got, resumed, began"
-                ongoing_actions = "receives, returns, fields, underway, begins, starts, resuming"
+❌ "Coming up after the break" → NO (still in break)
+❌ "Away we go" → NO (no kickoff action described)
+❌ "Second half underway" → NO (no kickoff action, just announcement)
+❌ "Here we go" → NO (no kickoff action)
+❌ "Back to action" → NO (no kickoff action described)
+❌ "Halftime score is 21-14" → NO (halftime analysis)
+❌ "At halftime, Duke leads" → NO (halftime analysis)
+❌ "Welcome to halftime" → NO (halftime break)"""
+                completed_actions = "received, returned, fielded, got"
+                ongoing_actions = "receives, returns, fields"
         else:  # kickoff_tipoff
             if GAME_TYPE == "basketball":
                 analyst_type = "basketball analyst"
@@ -515,19 +562,30 @@ Recent conversation (PRE-context):
 
 QUESTION: Has the {event_term} ALREADY HAPPENED or is HAPPENING RIGHT NOW in the current sentence?
 
-CRITICAL: Verify the SEQUENCE from PRE-context → CURRENT sentence:
-1. PRE-context should show pre-event indicators (moments away, about to start, etc.) OR the event just happened
-2. CURRENT sentence should describe the event happening/completed (not future tense)
-3. The progression should be: PRE-event talk → Event happening → (Post-event will be verified separately)
+{"="*60}
+CRITICAL FOR HALFTIME RESUMPTION - STRICT VERIFICATION:
+{"="*60}
 
-Critical checks:
-1. Does CURRENT sentence say "moments away", "coming up", "about to", "will", "going to"? → If YES, answer NO
-2. Is CURRENT sentence just "Go!" or "Let's go!" without describing an action? → If YES, answer NO
-3. Does CURRENT sentence describe a COMPLETED action ({completed_actions})? → If YES, answer YES
-4. Does CURRENT sentence describe ONGOING action ({ongoing_actions})? → If YES, answer YES
-5. Is CURRENT sentence talking about the FUTURE? → If YES, answer NO
-6. Is CURRENT sentence still halftime break commentary? → If YES, answer NO (for halftime resumption mode)
-7. Does PRE-context show progression toward the event? → Consider this in your decision
+FIRST: Reject if CURRENT sentence is HALFTIME ANALYSIS/COMMENTARY:
+- "halftime", "at halftime", "halftime score", "halftime analysis"
+- Statistics, scores, or analysis without gameplay action
+- "coming up", "after the break", "moments away"
+- Just "away we go", "here we go", "underway" WITHOUT tip-off/kickoff action
+→ If any of these, answer NO immediately
+
+SECOND: Accept ONLY if CURRENT sentence has BOTH:
+1. Clear resumption indicator: "second half/second period/third quarter" OR "back to action/resuming play"
+2. Actual event action: tip-off/kickoff action described (controls/wins/gets tip OR receives/returns/fields kickoff)
+3. Past/present tense (not future)
+
+Critical checks (in order):
+1. Is CURRENT sentence halftime analysis/commentary? → If YES, answer NO
+2. Does CURRENT sentence say "moments away", "coming up", "about to", "will", "going to"? → If YES, answer NO
+3. Is CURRENT sentence just "Go!", "Let's go!", "Away we go", "Here we go", or "Underway" WITHOUT tip-off/kickoff action? → If YES, answer NO
+4. Does CURRENT sentence have BOTH resumption indicator AND tip-off/kickoff action? → If NO, answer NO
+5. Does CURRENT sentence describe a COMPLETED action ({completed_actions})? → If YES, check if it also has resumption indicator, then answer YES
+6. Does CURRENT sentence describe ONGOING action ({ongoing_actions})? → If YES, check if it also has resumption indicator, then answer YES
+7. Is CURRENT sentence talking about the FUTURE? → If YES, answer NO
 
 Answer ONLY: YES or NO"""
                 }
